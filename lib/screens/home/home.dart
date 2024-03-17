@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60), // Adjust the height of the AppBar
+        preferredSize: Size.fromHeight(80), // Adjust the height of the AppBar
         child: AppBar(
           backgroundColor: Colors.red,
           title: GestureDetector(
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(
                   width:
-                      10), // Add some space between the IconButton and the Container
+                      20), // Add some space between the IconButton and the Container
               Container(
                 width: 20,
                 height: 22,
