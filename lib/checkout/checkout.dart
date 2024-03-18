@@ -63,7 +63,7 @@ class _CheckoutState extends State<Checkout> {
                               titleText('Deliver to'),
                               Expanded(
                                 child: Container(
-                                  width: 380,
+                                  width: 400,
                                   color: Colors.cyanAccent,
                                   child: Column(
                                     children: [

@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.grey,
                 image: DecorationImage(
                   image: AssetImage(
-                      'assets/home/img.png'), // Replace 'assets/img.png' with your image asset path
+                      'assets/home/img_back.png'), // Replace 'assets/img.png' with your image asset path
                   fit: BoxFit.cover,
                 ),
               ),

@@ -30,7 +30,7 @@ class Cart extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
-                    'assets/cart/img.png', // Your back button image asset
+                    'assets/cart/img_back.png', // Your back button image asset
                     width: 24, // Adjust the width as needed
                     height: 24, // Adjust the height as needed
                   ),

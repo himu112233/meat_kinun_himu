@@ -25,7 +25,7 @@ class ditailspage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(
                     20.0), // Clip the child to match the container's border radius
                 child: Image.asset(
-                  'assets/ditails/img.png', // Change this to your image file name
+                  'assets/ditails/img_back.png', // Change this to your image file name
                   fit: BoxFit.cover, // Adjust the fit as needed
                 ),
               ),
