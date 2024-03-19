@@ -185,6 +185,7 @@ class _TakeAChallnegeState extends State<TakeAChallnege> {
       ),
     );
   }
+
   Widget _buiildCalorieTorcherWidget() {
     return Container(
       width: 320,
