@@ -650,204 +650,345 @@ class YourWidget extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 33),
-                  Container(
-                    width: 392,
-                    height: 218,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Text(
-                                'Equipment Needed',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontFamily: 'Archivo',
-                                  fontWeight: FontWeight.w500,
-                                  height: 0.09,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20.0),
+                    child: Container(
+                      width: 392,
+                      height: 218,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Equipment Needed',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontFamily: 'Archivo',
+                                    fontWeight: FontWeight.w500,
+                                    height: 0.09,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 140),
-                              Text(
-                                '5 Items',
-                                style: TextStyle(
-                                  color: Color(0xFF9CA3AF),
-                                  fontSize: 12,
-                                  fontFamily: 'Archivo',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0.12,
+                                const SizedBox(width: 140),
+                                Text(
+                                  '5 Items',
+                                  style: TextStyle(
+                                    color: Color(0xFF9CA3AF),
+                                    fontSize: 12,
+                                    fontFamily: 'Archivo',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0.12,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 20),
-                        Container(
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 120,
-                                      height: 120,
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: ShapeDecoration(
-                                        color: Color(0xFF363434),
-                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-                                      ),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            width: 130,
-                                            height: 130,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: AssetImage("assets/missfit/item_img.png"), // Replace "assets/image_name.png" with your actual asset image path
-                                                fit: BoxFit.cover,
+                          const SizedBox(height: 20),
+                          Container(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 130,
+                                        height: 120,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: ShapeDecoration(
+                                          color: Color(0xFF363434),
+                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              width: 130,
+                                              height: 130,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: AssetImage("assets/missfit/item_img.png"), // Replace "assets/image_name.png" with your actual asset image path
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const SizedBox(height: 12),
-                                    SizedBox(
-                                      width: 120,
-                                      child: Text(
-                                        'Dumbbells',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 14,
-                                          fontFamily: 'Archivo',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.09,
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 16),
-                              Container(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 120,
-                                      height: 120,
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: ShapeDecoration(
-                                        color: Color(0xFF363434),
-                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                                      const SizedBox(height: 12),
+                                      SizedBox(
+                                        width: 120,
+                                        child: Text(
+                                          'Dumbbells',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                            fontFamily: 'Archivo',
+                                            fontWeight: FontWeight.w400,
+                                            height: 0.09,
+                                          ),
+                                        ),
                                       ),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            width: 130,
-                                            height: 130,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: AssetImage("assets/missfit/item_img.png"), // Replace "assets/image_name.png" with your actual asset image path
-                                                fit: BoxFit.cover,
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 16),
+                                Container(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 130,
+                                        height: 120,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: ShapeDecoration(
+                                          color: Color(0xFF363434),
+                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              width: 130,
+                                              height: 130,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: AssetImage("assets/missfit/item_img.png"), // Replace "assets/image_name.png" with your actual asset image path
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const SizedBox(height: 12),
-                                    SizedBox(
-                                      width: 120,
-                                      child: Text(
-                                        'Dumbbells',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 14,
-                                          fontFamily: 'Archivo',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.09,
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 16),
-                              Container(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 120,
-                                      height: 120,
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: ShapeDecoration(
-                                        color: Color(0xFF363434),
-                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                                      const SizedBox(height: 12),
+                                      SizedBox(
+                                        width: 120,
+                                        child: Text(
+                                          'Dumbbells',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                            fontFamily: 'Archivo',
+                                            fontWeight: FontWeight.w400,
+                                            height: 0.09,
+                                          ),
+                                        ),
                                       ),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            width: 130,
-                                            height: 130,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: AssetImage("assets/missfit/item_img.png"), // Replace "assets/image_name.png" with your actual asset image path
-                                                fit: BoxFit.cover,
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(width: 16),
+                                Container(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 120,
+                                        height: 120,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: ShapeDecoration(
+                                          color: Color(0xFF363434),
+                                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              width: 130,
+                                              height: 130,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: AssetImage("assets/missfit/item_img.png"), // Replace "assets/image_name.png" with your actual asset image path
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const SizedBox(height: 12),
-                                    SizedBox(
-                                      width: 120,
-                                      child: Text(
-                                        'Dumbbells',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 14,
-                                          fontFamily: 'Archivo',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.09,
+                                          ],
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      const SizedBox(height: 12),
+                                      SizedBox(
+                                        width: 120,
+                                        child: Text(
+                                          'Dumbbells',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                            fontFamily: 'Archivo',
+                                            fontWeight: FontWeight.w400,
+                                            height: 0.09,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
+                                
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 20),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20.0),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 77,
+                                  height: 30,
+                                  padding: const EdgeInsets.only(top: 6, left: 8, right: 10, bottom: 6),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF334155),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 16,
+                                        height: 16,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white, // Set color as needed or remove this line if you want transparent background
+                                          borderRadius: BorderRadius.circular(8), // Set borderRadius to make it a circle
+                                        ),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.access_time, // Use the appropriate icon for clock
+                                            size: 12, // Adjust size as needed
+                                            color: Colors.black, // Set color as needed
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 4), // Adjust spacing between image and text as needed
+                                      Text(
+                                        '25 min',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                          fontFamily: 'Archivo',
+                                          fontWeight: FontWeight.w400,
+                                          height: 0.12,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(width: 10),
+                                Container(
+                                  width: 109,
+                                  height: 30,
+                                  padding: const EdgeInsets.only(top: 6, left: 8, right: 10, bottom: 6),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF334155),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 16,
+                                        height: 16,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8), // Set borderRadius to make it a circle
+                                        ),
+                                        child: Image.asset(
+                                          'assets/missfit/scal_img.png', // Replace 'assets/missfit/scal_img.png' with your actual image asset path
+                                          width: 16,
+                                          height: 16,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 4), // Adjust spacing between image and text as needed
+                                      Text(
+                                        'Intermediate',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                          fontFamily: 'Archivo',
+                                          fontWeight: FontWeight.w400,
+                                          height: 0.12,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(width: 10),
+                                Container(
+                                  width: 79,
+                                  height: 30,
+                                  padding: const EdgeInsets.only(top: 6, left: 8, right: 10, bottom: 6),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF334155),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 16,
+                                        height: 16,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8), // Set borderRadius to make it a circle
+                                        ),
+                                        child: Image.asset(
+                                          'assets/missfit/fire_img.png', // Replace 'your_image.png' with your actual image asset path
+                                          width: 16,
+                                          height: 16,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 4), // Adjust spacing between image and text as needed
+                                      Text(
+                                        '247 cal',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                          fontFamily: 'Archivo',
+                                          fontWeight: FontWeight.w400,
+                                          height: 0.12,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+
+                        ],
+                      ),
                     ),
                   ),
                 ],
