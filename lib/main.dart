@@ -4,10 +4,13 @@ import 'package:ashraflow2/missfit/take_a_challenge.dart';
 import 'package:ashraflow2/payment/payment.dart';
 import 'package:ashraflow2/profile/profile.dart';
 import 'package:ashraflow2/screens/home/home.dart';
+import 'package:ashraflow2/select_delivery/select_delivery.dart';
 import 'package:flutter/material.dart';
 
 import 'adress/adress.dart';
 import 'cart/cart.dart';
+import 'delivery2/delivery2.dart';
+import 'login_page/login.dart';
 import 'missfit/calorietorcher.dart';
 void main() {
   runApp(MyApp());
@@ -22,9 +25,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CalorieApp(),
+      home: Delivery2(),
     );
   }
+}
+
+class _Delivery2State {
 }
 
 
