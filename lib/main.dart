@@ -3,6 +3,7 @@ import 'package:ashraflow2/ditails/ditailspage.dart';
 import 'package:ashraflow2/missfit/take_a_challenge.dart';
 import 'package:ashraflow2/payment/payment.dart';
 import 'package:ashraflow2/profile/profile.dart';
+import 'package:ashraflow2/recomented_product/recomented_product.dart';
 import 'package:ashraflow2/screens/home/home.dart';
 import 'package:ashraflow2/select_delivery/select_delivery.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Delivery2(),
+      home: RecomendedProduct(),
     );
   }
 }
