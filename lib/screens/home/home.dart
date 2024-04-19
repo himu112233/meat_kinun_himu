@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.green,
                         image: DecorationImage(
                           image: AssetImage(
-                              'assets/home/img_5.png'), // Replace 'assets/img.png' with your image asset path
+                              'assets/home/fingure_img.png'), // Replace 'assets/img.png' with your image asset path
                           fit: BoxFit.cover,
                         ),
                       ),
