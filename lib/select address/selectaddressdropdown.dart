@@ -172,52 +172,54 @@ class _SelectAddressBottomSheetState extends State<SelectAddressBottomSheet> {
                 ),
             ],
           ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: selectedDistrict == null ? districts.length : (selectedUpazila == null ? upazilas.length : postcodes.length),
-              itemBuilder: (context, index) {
-                if (selectedDistrict == null) {
-                  final district = districts[index];
-                  return ListTile(
-                    title: Text(district['name'] ?? ''),
-                    onTap: () {
-                      setState(() {
-                        selectedDistrict = district['name'];
-                        selectedUpazila = null; // Reset selected upazila when district is selected
-                        selectedPostCode = null; // Reset selected postcode when district is selected
-                      });
-                    },
-                  );
-                } else if (selectedUpazila == null) {
-                  final upazila = upazilas[index];
-                  if (upazila['district_id'] == selectedDistrict) { // Comparison corrected
-                    return ListTile(
-                      title: Text(upazila['name'] ?? ''),
-                      onTap: () {
-                        setState(() {
-                          selectedUpazila = upazila['name'];
-                          selectedPostCode = null; // Reset selected postcode when upazila is selected
-                        });
-                      },
-                    );
-                  }
-                } else {
-                  final postcode = postcodes[index];
-                  if (postcode['upazila'] == selectedUpazila) {
-                    return ListTile(
-                      title: Text(postcode['postCode'] ?? ''),
-                      onTap: () {
-                        setState(() {
-                          selectedPostCode = postcode['postCode'];
-                        });
-                      },
-                    );
-                  }
-                }
-                return SizedBox.shrink();
-              },
-            ),
-          ),      ],
+      Expanded(
+        child: ListView.builder(
+          itemCount: selectedDistrict == null
+              ? districts.length
+              : (selectedUpazila == null ? upazilas.length : postcodes.length),
+          itemBuilder: (context, index) {
+            if (selectedDistrict == null) {
+              final district = districts[index];
+              return ListTile(
+                title: Text(district['name'] ?? ''),
+                onTap: () {
+                  setState(() {
+                    selectedDistrict = district['id']; // Set selected district ID
+                    selectedUpazila = null; // Reset selected upazila when district is selected
+                    selectedPostCode = null; // Reset selected postcode when district is selected
+                  });
+                },
+              );
+            } else if (selectedUpazila == null) {
+              final upazila = upazilas[index];
+              if (upazila['district_id'] == selectedDistrict) {
+                return ListTile(
+                  title: Text(upazila['name'] ?? ''),
+                  onTap: () {
+                    setState(() {
+                      selectedUpazila = upazila['name'];
+                      selectedPostCode = null; // Reset selected postcode when upazila is selected
+                    });
+                  },
+                );
+              }
+            } else {
+              final postcode = postcodes[index];
+              if (postcode['upazila'] == selectedUpazila) {
+                return ListTile(
+                  title: Text(postcode['postCode'] ?? ''),
+                  onTap: () {
+                    setState(() {
+                      selectedPostCode = postcode['postCode'];
+                    });
+                  },
+                );
+              }
+            }
+            return SizedBox.shrink();
+          },
+        ),
+      ),      ],
       ),
     );
   }
