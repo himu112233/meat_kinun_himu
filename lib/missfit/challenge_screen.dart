@@ -1,583 +1,283 @@
-import 'package:flutter/material.dart';
-
-class ChallengeScreen extends StatefulWidget {
-  const ChallengeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<ChallengeScreen> createState() => _ChallengeScreenState();
-}
-
-class _ChallengeScreenState extends State<ChallengeScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Colors.black87, Colors.white], // Black to white gradient
-          ),
-        ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              icon: Icon(Icons.arrow_drop_up),
-              onPressed: () {
-                // Show bottom navigation sheet here
-                showModalBottomSheet(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return Container(
-                      width: 420,
-                      height: 510,
-                      decoration: ShapeDecoration(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            topRight: Radius.circular(30),
-                          ),
-                        ),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 20.0),
-                        child: Column(
-                          children: [
-                            Text(
-                              'Why give up?',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Color(0xFF1E293B),
-                                fontSize: 24,
-                                fontFamily: 'Archivo',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Text(
-                              'This will help us know you better and provide the workout that is more suitable for you.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Color(0xFF1E293B),
-                                fontSize: 16,
-                                fontFamily: 'Archivo',
-                                fontWeight: FontWeight.w400,
-                                height: 0,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Container(
-                              width: 312,
-                              height: 48,
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                      width: 1, color: Color(0xFFE5E7EB)),
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                              ),
-                              child: Container(
-                                width: 312,
-                                height: 48,
-                                decoration: ShapeDecoration(
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(
-                                        width: 1, color: Color(0xFFE5E7EB)),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                ),
-                                child: Container(
-                                  width: 24,
-                                  height: 24,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        left: 0.49,
-                                        top: 1.37,
-                                        child: Container(
-                                          width: 23.02,
-                                          height: 21.27,
-                                          child: Stack(
-                                            children: [
-                                              Positioned(
-                                                left: 0,
-                                                top: 12.12,
-                                                child: Container(
-                                                  width: 23.02,
-                                                  height: 6.90,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        left: 13.86,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 9.15,
-                                                          height: 6.90,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        left: 0,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 9.15,
-                                                          height: 6.90,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                left: 7.34,
-                                                top: 6.13,
-                                                child: Container(
-                                                  width: 8.34,
-                                                  height: 15.14,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        left: -0,
-                                                        top: 4.72,
-                                                        child: Container(
-                                                          width: 8.34,
-                                                          height: 10.41,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        left: 1.71,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 5.54,
-                                                          height: 9.11,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left: 10,
-                                        top: 08,
-                                        child: Image.asset(
-                                          'assets/missfit/girl_logo.png', // Replace 'assets/missfit/girl_logo.png' with your actual image path
-                                          width: 24,
-                                          height: 24,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left:
-                                            48, // Adjust the left position to align with the image
-                                        top:
-                                            20, // Adjust the top position to align with the image
-                                        child: SizedBox(
-                                          width: 185,
-                                          child: Text(
-                                            'Don’t know how to do it',
-                                            style: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 16,
-                                              fontFamily: 'Archivo',
-                                              fontWeight: FontWeight.w400,
-                                              height: 0.09,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Container(
-                              width: 312,
-                              height: 48,
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                      width: 1, color: Color(0xFFE5E7EB)),
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                              ),
-                              child: Container(
-                                width: 312,
-                                height: 48,
-                                decoration: ShapeDecoration(
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(
-                                        width: 1, color: Color(0xFFE5E7EB)),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                ),
-                                child: Container(
-                                  width: 24,
-                                  height: 24,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        left: 0.49,
-                                        top: 1.37,
-                                        child: Container(
-                                          width: 23.02,
-                                          height: 21.27,
-                                          child: Stack(
-                                            children: [
-                                              Positioned(
-                                                left: 0,
-                                                top: 12.12,
-                                                child: Container(
-                                                  width: 23.02,
-                                                  height: 6.90,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        left: 13.86,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 9.15,
-                                                          height: 6.90,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        left: 0,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 9.15,
-                                                          height: 6.90,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                left: 7.34,
-                                                top: 6.13,
-                                                child: Container(
-                                                  width: 8.34,
-                                                  height: 15.14,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        left: -0,
-                                                        top: 4.72,
-                                                        child: Container(
-                                                          width: 8.34,
-                                                          height: 10.41,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        left: 1.71,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 5.54,
-                                                          height: 9.11,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left: 10,
-                                        top: 08,
-                                        child: Image.asset(
-                                          'assets/missfit/girl2_logo.png', // Replace 'assets/missfit/girl_logo.png' with your actual image path
-                                          width: 24,
-                                          height: 24,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left:
-                                            48, // Adjust the left position to align with the image
-                                        top:
-                                            20, // Adjust the top position to align with the image
-                                        child: SizedBox(
-                                          width: 185,
-                                          child: Text(
-                                            'Don’t know how to do it',
-                                            style: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 16,
-                                              fontFamily: 'Archivo',
-                                              fontWeight: FontWeight.w400,
-                                              height: 0.09,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Container(
-                              width: 312,
-                              height: 48,
-                              decoration: ShapeDecoration(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                      width: 1, color: Color(0xFFE5E7EB)),
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                              ),
-                              child: Container(
-                                width: 312,
-                                height: 48,
-                                decoration: ShapeDecoration(
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(
-                                        width: 1, color: Color(0xFFE5E7EB)),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                ),
-                                child: Container(
-                                  width: 24,
-                                  height: 24,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        left: 0.49,
-                                        top: 1.37,
-                                        child: Container(
-                                          width: 23.02,
-                                          height: 21.27,
-                                          child: Stack(
-                                            children: [
-                                              Positioned(
-                                                left: 0,
-                                                top: 12.12,
-                                                child: Container(
-                                                  width: 23.02,
-                                                  height: 6.90,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        left: 13.86,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 9.15,
-                                                          height: 6.90,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        left: 0,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 9.15,
-                                                          height: 6.90,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Positioned(
-                                                left: 7.34,
-                                                top: 6.13,
-                                                child: Container(
-                                                  width: 8.34,
-                                                  height: 15.14,
-                                                  child: Stack(
-                                                    children: [
-                                                      Positioned(
-                                                        left: -0,
-                                                        top: 4.72,
-                                                        child: Container(
-                                                          width: 8.34,
-                                                          height: 10.41,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                      Positioned(
-                                                        left: 1.71,
-                                                        top: 0,
-                                                        child: Container(
-                                                          width: 5.54,
-                                                          height: 9.11,
-                                                          child: Stack(
-                                                            children: [
-                                                              // Nested Stack children here
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left: 10,
-                                        top: 08,
-                                        child: Image.asset(
-                                          'assets/missfit/rose_flower.png', // Replace 'assets/missfit/girl_logo.png' with your actual image path
-                                          width: 24,
-                                          height: 24,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left:
-                                            48, // Adjust the left position to align with the image
-                                        top:
-                                            20, // Adjust the top position to align with the image
-                                        child: SizedBox(
-                                          width: 185,
-                                          child: Text(
-                                            'Don’t know how to do it',
-                                            style: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 16,
-                                              fontFamily: 'Archivo',
-                                              fontWeight: FontWeight.w400,
-                                              height: 0.09,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 80,
-                            ),
-                            InkWell(
-                              onTap: () {
-                                // Close the page when the button is tapped
-                                Navigator.pop(context);
-                              },
-                              child: Container(
-                                width: 312,
-                                height: 52,
-                                decoration: ShapeDecoration(
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Colors.red),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    'I Want To Quit',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontFamily: 'Archivo',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0.09,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
-                  },
-                );
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+// import 'package:flutter/material.dart';
+//
+// import 'package:flutter/material.dart';
+// import 'search_bar.dart'; // Adjust the import based on your file structure
+// import 'challenge_card.dart'; // Adjust the import based on your file structure
+//
+// class TakeChallenge extends StatefulWidget {
+//   const TakeChallenge({super.key});
+//
+//   @override
+//   _TakeChallengeState createState() => _TakeChallengeState();
+// }
+//
+// class _TakeChallengeState extends State<TakeChallenge> {
+//   List<String> challenges = [
+//     'Calorie Torcher',
+//     'Strength Builder',
+//     'Cardio King',
+//     'Flexibility Master',
+//     'Mindfulness Journey',
+//     'Quick HIIT',
+//     'Endurance Challenge',
+//     'Muscle Gain'
+//   ]; // This should ideally come from your data source
+//
+//   List<String> filteredChallenges = [];
+//   TextEditingController searchController = TextEditingController();
+//
+//   @override
+//   void initState() {
+//     super.initState();
+//     filteredChallenges = challenges;
+//     searchController.addListener(() {
+//       filterChallenges();
+//     });
+//   }
+//
+//   @override
+//   void dispose() {
+//     searchController.dispose();
+//     super.dispose();
+//   }
+//
+//   void filterChallenges() {
+//     List<String> _challenges = challenges
+//         .where((challenge) =>
+//         challenge.toLowerCase().contains(searchController.text.toLowerCase()))
+//         .toList();
+//     setState(() {
+//       filteredChallenges = _challenges;
+//     });
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: PreferredSize(
+//         preferredSize: const Size.fromHeight(97), // custom height of 97
+//         child: ClipRRect(
+//           borderRadius: const BorderRadius.only(
+//             bottomLeft: Radius.circular(20),
+//             bottomRight: Radius.circular(20),
+//           ),
+//           child: AppBar(
+//             leading: Padding(
+//               padding: const EdgeInsets.only(top: 20.0),
+//               child: IconButton(
+//                 icon: const Icon(Icons.arrow_back),
+//                 onPressed: () {
+//                   Navigator.pop(context);
+//                 },
+//               ),
+//             ),
+//             title: Padding(
+//               padding: const EdgeInsets.only(top: 20.0),
+//               child: const Text('Take a Challenge'),
+//             ),
+//             centerTitle: true,
+//             backgroundColor: Colors.white,
+//           ),
+//         ),
+//       ),
+//       body: Column(
+//         children: [
+//           SearchBar(controller: searchController),
+//
+//           SizedBox(height: 22),
+//           Text(
+//             'Challenges',
+//             style: TextStyle(
+//               color: Color(0xFF334155),
+//               fontSize: 20,
+//               fontFamily: 'Kanit',
+//               fontWeight: FontWeight.w500,
+//               height: 1.2,
+//             ),
+//           ),
+//           ChallengeCard(challenge: filteredChallenges),
+//           SizedBox(height: 22),
+//         ],
+//       ),
+//     );
+//   }
+// }
+//
+// class ChallengeCard extends StatelessWidget {
+//   final String challenge;
+//
+//   const ChallengeCard({super.key, required this.challenge});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+//       children: [
+//         Row(
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             Container(
+//               width: 60,
+//               height: 60,
+//               clipBehavior: Clip.antiAlias,
+//               decoration: ShapeDecoration(
+//                 color: Colors.white,
+//                 shape: RoundedRectangleBorder(
+//                   borderRadius: BorderRadius.circular(4),
+//                 ),
+//               ),
+//               child: Container(
+//                 width: 60,
+//                 height: 60,
+//                 decoration: BoxDecoration(
+//                   image: DecorationImage(
+//                     image: AssetImage('assets/missfit/red_girl.png'), // Replace with your image path
+//                     fit: BoxFit.cover,
+//                   ),
+//                 ),
+//               ),
+//             ),
+//             const SizedBox(width: 16),
+//             Expanded(
+//               child: Column(
+//                 crossAxisAlignment: CrossAxisAlignment.start,
+//                 children: [
+//                   Text(
+//                     challenge,
+//                     style: TextStyle(
+//                       color: Color(0xFF334155),
+//                       fontSize: 18,
+//                       fontFamily: 'Archivo',
+//                       fontWeight: FontWeight.w500,
+//                       height: 1.2,
+//                     ),
+//                   ),
+//                   const SizedBox(height: 20),
+//                   Row(
+//                     children: [
+//                       _buildLabelWithIcon('assets/missfit/logo1_img.png', 'Intermediate'),
+//                       const SizedBox(width: 16),
+//                       _buildLabelWithIcon('assets/missfit/logo2_img.png', 'Beginner'),
+//                       const SizedBox(width: 16),
+//                       _buildLabelWithIcon('assets/missfit/logo3_img.png', 'Advanced'),
+//                     ],
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ],
+//         ),
+//         const SizedBox(height: 15),
+//         Container(
+//           width: double.infinity,
+//           decoration: ShapeDecoration(
+//             shape: RoundedRectangleBorder(
+//               side: BorderSide(
+//                 width: 1,
+//                 color: Color(0xFFE5E7EB),
+//               ),
+//             ),
+//           ),
+//         ),
+//         const SizedBox(height: 22),
+//       ],
+//     );
+//   }
+//
+//   Widget _buildLabelWithIcon(String assetPath, String label) {
+//     return Row(
+//       children: [
+//         Image.asset(
+//           assetPath,
+//           width: 16,
+//           height: 16,
+//         ),
+//         const SizedBox(width: 4),
+//         Text(
+//           label,
+//           style: TextStyle(
+//             color: Color(0xFF66758C),
+//             fontSize: 14,
+//             fontFamily: 'Archivo',
+//             fontWeight: FontWeight.w400,
+//             height: 1.2,
+//           ),
+//         ),
+//       ],
+//     );
+//   }
+// }
+//
+// class SearchBar extends StatelessWidget {
+//   final TextEditingController controller;
+//
+//   const SearchBar({super.key, required this.controller});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       width: double.infinity,
+//       height: 55,
+//       margin: const EdgeInsets.only(top: 20),
+//       child: Row(
+//         children: [
+//           Expanded(
+//             child: Container(
+//               height: 40,
+//               padding: const EdgeInsets.symmetric(horizontal: 12),
+//               decoration: ShapeDecoration(
+//                 color: Colors.white,
+//                 shape: RoundedRectangleBorder(
+//                   side: const BorderSide(width: 1, color: Color(0xFFD1D5DB)),
+//                   borderRadius: BorderRadius.circular(4),
+//                 ),
+//               ),
+//               child: Row(
+//                 children: [
+//                   Icon(
+//                     Icons.search,
+//                     color: Color(0xFF9CA3AF),
+//                     size: 24,
+//                   ),
+//                   const SizedBox(width: 8),
+//                   Expanded(
+//                     child: TextField(
+//                       controller: controller,
+//                       decoration: InputDecoration(
+//                         hintText: 'Search',
+//                         hintStyle: TextStyle(
+//                           color: Color(0xFF9CA3AF),
+//                           fontSize: 14,
+//                           fontFamily: 'Archivo',
+//                           fontWeight: FontWeight.w400,
+//                           height: 1.5,
+//                         ),
+//                         border: InputBorder.none,
+//                       ),
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ),
+//           const SizedBox(width: 12),
+//           Container(
+//             width: 40,
+//             height: 40,
+//             padding: const EdgeInsets.all(8),
+//             decoration: ShapeDecoration(
+//               color: Colors.white,
+//               shape: RoundedRectangleBorder(
+//                 side: const BorderSide(width: 1, color: Color(0xFFD1D5DB)),
+//                 borderRadius: BorderRadius.circular(4),
+//               ),
+//             ),
+//             child: Image.asset(
+//               'assets/missfit/img_7.png', // Replace with your image path
+//               fit: BoxFit.cover,
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }

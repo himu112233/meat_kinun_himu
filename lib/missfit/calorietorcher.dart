@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(CalorieApp());
-}
-
 class CalorieApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,7 +7,7 @@ class CalorieApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor:
-            Colors.red[600], // Set the background color of the scaffold to red
+        Colors.red[600], // Set the background color of the scaffold to red
         body: YourWidget(),
       ),
     );
@@ -149,7 +145,7 @@ class YourWidget extends StatelessWidget {
                               ),
                               const SizedBox(
                                   width:
-                                      4), // Adjust spacing between image and text as needed
+                                  4), // Adjust spacing between image and text as needed
                               Text(
                                 '25 min',
                                 style: TextStyle(
@@ -195,7 +191,7 @@ class YourWidget extends StatelessWidget {
                               ),
                               const SizedBox(
                                   width:
-                                      4), // Adjust spacing between image and text as needed
+                                  4), // Adjust spacing between image and text as needed
                               Text(
                                 'Intermediate',
                                 style: TextStyle(
@@ -241,7 +237,7 @@ class YourWidget extends StatelessWidget {
                               ),
                               const SizedBox(
                                   width:
-                                      4), // Adjust spacing between image and text as needed
+                                  4), // Adjust spacing between image and text as needed
                               Text(
                                 '247 cal',
                                 style: TextStyle(
@@ -286,7 +282,7 @@ class YourWidget extends StatelessWidget {
                           ),
                           SizedBox(
                               height:
-                                  20), // Add spacing between the "Overview" text and the new container
+                              20), // Add spacing between the "Overview" text and the new container
                           Padding(
                             padding: const EdgeInsets.only(left: 20.0),
                             child: Container(
@@ -338,7 +334,7 @@ class YourWidget extends StatelessWidget {
                           ),
                           SizedBox(
                               height:
-                                  20), //// Add spacing between the "Exercises" text and the new container
+                              20), //// Add spacing between the "Exercises" text and the new container
 
                           ////list container ///
                           Container(
@@ -363,7 +359,7 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF6B7280),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                       ),
                                       const SizedBox(width: 24),
@@ -371,9 +367,9 @@ class YourWidget extends StatelessWidget {
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.start,
+                                          MainAxisAlignment.start,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               'Jumping Jack',
@@ -438,7 +434,7 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF6B7280),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                       ),
                                       const SizedBox(width: 24),
@@ -446,9 +442,9 @@ class YourWidget extends StatelessWidget {
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.start,
+                                          MainAxisAlignment.start,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               'Jumping Jack',
@@ -513,7 +509,7 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF6B7280),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                       ),
                                       const SizedBox(width: 24),
@@ -521,9 +517,9 @@ class YourWidget extends StatelessWidget {
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.start,
+                                          MainAxisAlignment.start,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               'Jumping Jack',
@@ -588,7 +584,7 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF6B7280),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                       ),
                                       const SizedBox(width: 24),
@@ -596,9 +592,9 @@ class YourWidget extends StatelessWidget {
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.start,
+                                          MainAxisAlignment.start,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               'Jumping Jack',
@@ -751,7 +747,7 @@ class YourWidget extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         width: 130,
@@ -761,14 +757,14 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF363434),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.center,
+                                          MainAxisAlignment.center,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                           children: [
                                             Container(
                                               width: 130,
@@ -807,7 +803,7 @@ class YourWidget extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         width: 130,
@@ -817,14 +813,14 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF363434),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.center,
+                                          MainAxisAlignment.center,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                           children: [
                                             Container(
                                               width: 130,
@@ -863,7 +859,7 @@ class YourWidget extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         width: 120,
@@ -873,14 +869,14 @@ class YourWidget extends StatelessWidget {
                                           color: Color(0xFF363434),
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(4)),
+                                              BorderRadius.circular(4)),
                                         ),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.center,
+                                          MainAxisAlignment.center,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                           children: [
                                             Container(
                                               width: 130,
@@ -1084,7 +1080,7 @@ class YourWidget extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 20),
-                        //  add 3 image//
+                          //  add 3 image//
                           Padding(
                             padding: const EdgeInsets.only(left: 20.0),
                             child: Column(

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
-
 class ChallengeComplete extends StatefulWidget {
   const ChallengeComplete({Key? key}) : super(key: key);
 

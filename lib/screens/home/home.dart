@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                             .withOpacity(0.5), // Black color with 50% opacity
                         child: Center(
                           child: Image.asset(
-                            'assets/home/img_8.png', // Replace 'assets/home/your_image.png' with your image asset path
+                            'assets/home/red_girl2.png', // Replace 'assets/home/your_image.png' with your image asset path
                             width: 20, // Adjust width as needed
                             height: 20, // Adjust height as needed
                           ),
@@ -172,7 +172,7 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.green,
                         image: DecorationImage(
                           image: AssetImage(
-                              'assets/home/img_9.png'), // Replace 'assets/img.png' with your image asset path
+                              'assets/home/dumble.png'), // Replace 'assets/img.png' with your image asset path
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                             .withOpacity(0.5), // Black color with 50% opacity
                         child: Center(
                           child: Image.asset(
-                            'assets/home/img_8.png', // Replace 'assets/home/your_image.png' with your image asset path
+                            'assets/home/red_girl2.png', // Replace 'assets/home/your_image.png' with your image asset path
                             width: 20, // Adjust width as needed
                             height: 20, // Adjust height as needed
                           ),
@@ -205,7 +205,7 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.green,
                         image: DecorationImage(
                           image: AssetImage(
-                              'assets/home/img_10.png'), // Replace 'assets/img.png' with your image asset path
+                              'assets/home/strip.png'), // Replace 'assets/img.png' with your image asset path
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -220,7 +220,7 @@ class _HomePageState extends State<HomePage> {
                             .withOpacity(0.5), // Black color with 50% opacity
                         child: Center(
                           child: Image.asset(
-                            'assets/home/img_8.png', // Replace 'assets/home/your_image.png' with your image asset path
+                            'assets/home/red_girl2.png', // Replace 'assets/home/your_image.png' with your image asset path
                             width: 20, // Adjust width as needed
                             height: 20, // Adjust height as needed
                           ),

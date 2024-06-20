@@ -51,6 +51,7 @@ dev_dependencies:
   image_picker: ^1.0.7
 
 
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -75,6 +76,8 @@ flutter:
     - assets/recomented/
     - assets/missfit/
     - assets/animation/
+    - assets/education/
+    - assets/images/
 
 
   #   - images/a_dot_ham.jpeg
@@ -90,7 +93,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
@@ -104,3 +107,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+    - family: AppIcons
+      fonts:
+        - asset: assets/icons/app_icons.ttf
+    - family: CategoryIcons
+      fonts:
+        - asset: assets/icons/category_icons.ttf
